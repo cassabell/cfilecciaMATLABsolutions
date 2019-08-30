@@ -9,7 +9,7 @@
 
 % There are two parts to this assignment. Part 1 deals with using the
 % Matlab documentation to answer some questions or perform some tasks. Part
-% 2 involves you writing your very first Matlab program!! TEST
+% 2 involves you writing your very first Matlab program!!
 
 % Please write all of your responses in the following .mfile.
 % If there are comments after the question (as in question 2) please 
