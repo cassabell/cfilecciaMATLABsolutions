@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Assignment 1: Matlab Scavenger Hunt and HelloWorld
 %
-% Submitted by:
+% Submitted by: Cassie Fileccia
 %
 % Due: September 3, 2019
 %
@@ -22,11 +22,11 @@
 
 % 1. Set the url of the matlab documentation to a variable called helpURL
 
-
+ 'helpURL = www.mathworks.com/help/matlab' 
 
 % 2. What does the command 'clear all' do?
 %
-% Answer: 
+% Answer: Clears workspace and variables
 %
 
 
@@ -34,16 +34,18 @@
 % numbers [1 7 21 32 67 32453]? Store your answer in a variable called
 % averageAnswer.
 
+x = [1 7 21 32 67 32453]
+averageAnswer = mean(x)
 
 
 % 4. What command would you type to see a list of all installed toolboxes?
 
-
+ ver
 
 % 5. What command would return a list of all of the available functions in 
 % the image processing toolbox? 
 
-
+helpwin images
 
 % 6. On the line below figure, write a command to draw a graph of 
 % x and y. 
@@ -51,8 +53,8 @@
 x = linspace(-2*pi,2*pi);
 y = sin(x);
 
-figure
-        %<- command goes here
+%figure
+        plot(x,y)
 
         
 
@@ -60,14 +62,16 @@ figure
 % in a journal article (there are many possible answers to this). 
 
 %
-% Answer: 
+% Answer: anova1
 %
 
 % 8. What are the 2 major types of loops that MATLAB supports? What is the
 % difference between them?
 
 %
-% Answer: 
+% Answer: for loops and while loops; for loops run for a specific amount of
+% times you command it to where while loops run as long as the conditions
+% remain true
 % 
 
 
@@ -75,7 +79,8 @@ figure
 % an answer. 
 
 %
-% Answer: 
+% Answer: Not a number; this would be an answer when entering a command
+% suchs as 0/0 or inf/inf or 0*inf
 %
 
 
@@ -85,22 +90,32 @@ figure
 % any of the values in A.
 
 A = [1 2 3 2 1 NaN 1 2 3 NaN];
-S = sum(A)
+S = nansum(A)
 
 
 % 11. I used to love playing the game minesweeper. Is there a way that I
 % could play a similar game on Matlab? Write the command that would launch
 % the game if so. 
 
-
+xpbombs
 
 % 12. What happens if you type why and hit enter in the command window?
 % Repeat this a few times and copy your result below (Make sure everything
 % is commented out).
 
-%
+
 % Answer: 
-%
+%why
+%Some mathematician obeyed a kid.
+%why
+%For the love of Pete.
+%why
+%Some terrified hamster wanted it.
+%why
+%Why not?
+%why
+%A engineer insisted on it.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%  Part 2: Hello World %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -114,8 +129,7 @@ S = sum(A)
 
 %%% Enter the code for your program below this line
 
-
-
+disp('Hello World')
 
 
 %%%%% When you have completed everything, type the following two commands
