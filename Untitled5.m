@@ -1,1 +1,0 @@
-sum(Day1)/sum(Weight)
